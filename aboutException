@@ -1,0 +1,36 @@
+例外について
+
+例外とは（Exception）
+
+うまくいくかわからない処理
+（サーバーとつながらない、引数の型が違う）
+
+処理が重いので使いどころは注意（Promiseで代用が多い）
+
+例外には２種類ある
+
+１、throw
+throwでErrorを投げることも throw new Error();
+
+２、try
+try{}catch(e){} // eはErrorオブジェクト
+try{}catch(e){}finally{}
+
+
+/////////////////////////////////////////////
+
+Promiseについて
+
+ES5で追加された目玉機能（非同期に関連する機能）
+
+非同期処理を簡単にできる
+
+JavaScriptには非同期が２つある
+
+非同期処理と非同期通信
+
+１、非同期処理
+  Promiseベースのasync/await
+
+２、非同期通信（Ajax）
+  Promiseベースのfetch
